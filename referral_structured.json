@@ -1,0 +1,45 @@
+{
+  "patient": {
+    "firstname": "Sarah",
+    "lastname": "Johnson",
+    "dob": "03/22/1990",
+    "sex": "F",
+    "mobilephone": "6175555678",
+    "homephone": "6175555678",
+    "email": "sarah.johnson@email.com",
+    "address1": "742 Evergreen Terrace",
+    "city": "Springfield",
+    "state": "MA",
+    "zip": "01101"
+  },
+  "guarantor": {
+    "guarantorfirstname": "Sarah",
+    "guarantorlastname": "Johnson",
+    "guarantordob": "03/22/1990",
+    "guarantorrelationshiptopatient": "1"
+  },
+  "referring_provider": {
+    "name": "Dr. Michael Chen",
+    "npi": null,
+    "practice": "Springfield Family Medicine",
+    "phone": "6175551234",
+    "fax": "6175555678"
+  },
+  "insurance": {
+    "payer": "Blue Cross Blue Shield",
+    "plan_type": "PPO",
+    "policy_number": "BCB-987654321",
+    "group_id": "GRP-00456",
+    "policy_holder": "Sarah Johnson"
+  },
+  "referral": {
+    "referred_to": "Cardiology Department",
+    "reason": "Chest pain, exertional dyspnea, rule out CAD",
+    "primary_diagnosis": "Chest Pain (ICD-10: R07.9)",
+    "secondary_diagnosis": "Hypertension (ICD-10: I10)",
+    "urgency": "Routine",
+    "auth_number": "AUTH-2026-44821",
+    "clinical_notes": "Patient presents with 3-month history of exertional chest pain and shortness of breath. EKG showed non-specific ST changes. Stress test pending. Refer for cardiology evaluation."
+  },
+  "athena_patient_id": "68400"
+}

@@ -1,0 +1,24 @@
+[project]
+name = "api-automation"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Abdul Rehman", email = "m.abdulrehman.shoukat@gmial.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "google-genai>=2.11.0",
+    "google-generativeai>=0.8.6",
+    "openai>=2.45.0",
+    "python-dotenv>=1.2.2",
+    "reportlab>=5.0.0",
+    "requests>=2.34.2",
+]
+
+[project.scripts]
+main = "api_automation:main"
+
+[build-system]
+requires = ["uv_build>=0.10.11,<0.11.0"]
+build-backend = "uv_build"

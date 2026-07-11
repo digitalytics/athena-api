@@ -1,0 +1,43 @@
+
+--- Page 83679 ---
+```
+                          PATIENT REFERRAL FORM
+                     Please complete all sections. Fax to receiving provider.
+
+SECTION 1 — PATIENT INFORMATION
+First Name: Sarah                               Last Name: Johnson
+Date of Birth: 03/22/1990                       Sex: F
+Phone (Mobile): (555) 867-5309                  Phone (Home): (555) 234-5678
+Email: sarah.johnson@email.com
+Address: 742 Evergreen Terrace
+City: Springfield                                State: MA
+ZIP Code: 01101
+
+SECTION 2 — REFERRING PROVIDER
+Provider Name: Dr. Michael Chen                      NPI:
+Practice Name: Springfield Family Medicine
+Phone: (555) 111-2222                                 Fax: (555) 111-3333
+Address: 100 Medical Plaza, Springfield, MA 01101
+
+SECTION 3 — REFERRAL DETAILS
+Referred To: Cardiology Department                    Urgency: Routine
+Reason for Referral: Chest pain, exertional dyspnea, rule out CAD
+Primary Diagnosis: Chest Pain (ICD-10: R07.9)
+Secondary Diagnosis: Hypertension (ICD-10: I10)
+Date of Service: 07/10/2026                          Auth Number: AUTH-2026-44821
+Clinical Notes: Patient presents with 3-month history of exertional chest pain and shortness of breath. EK
+G showed non-specific ST changes. Stress test pending. Refer for cardiology evaluation.
+
+SECTION 4 — INSURANCE INFORMATION
+Primary Payer: Blue Cross Blue Shield                 Plan Type: PPO
+Policy Number: BCB-987654321                          Group ID: GRP-00456
+Policy Holder Name: Sarah Johnson                     Relationship: Self
+Policy Holder DOB: 03/22/1990
+
+SECTION 5 — GUARANTOR INFORMATION
+Guarantor First Name: Sarah                          Guarantor Last Name: Johnson
+Guarantor DOB: 03/22/1990                           Relationship: 1 (Self)
+
+                         CONFIDENTIAL — This document contains protected health information (PHI).
+Unauthorized disclosure is prohibited under HIPAA.
+```
