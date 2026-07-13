@@ -1,0 +1,12 @@
+2026-07-13 23:45:58 | INFO     | Pipeline started
+2026-07-13 23:46:00 | INFO     | AthenaHealth token obtained
+2026-07-13 23:46:02 | INFO     | Target doctor: Dr. Victor Alcatraz | schedulingname=alcatraz | providerid=2360
+2026-07-13 23:46:04 | INFO     | Unmatched referrals found: 5
+2026-07-13 23:46:05 | ERROR    | adminid=152353 | action=FAILED | No pages found on this document — cannot OCR
+2026-07-13 23:46:27 | WARNING  | adminid=193801 | action=SKIPPED_EXISTING | patientid=1332
+2026-07-13 23:46:44 | ERROR    | adminid=239631 | action=FAILED | Patient registration failed (400): 
+
+{"fields":["email","guarantoremail","ssn","homephone","mobilephone","workphone","zip"],"error":"Data for one or more of the fields listed above are required to successfully create or find a patient record. Note: invalid phone numbers are ignored."}
+2026-07-13 23:47:16 | WARNING  | adminid=239636 | action=SKIPPED_EXISTING | patientid=68400
+2026-07-13 23:47:43 | WARNING  | adminid=239639 | action=SKIPPED_EXISTING | patientid=68400
+2026-07-13 23:47:43 | INFO     | Pipeline complete | total=5 registered=0 skipped=3 failed=2
