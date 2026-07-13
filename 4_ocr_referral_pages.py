@@ -1,3 +1,7 @@
+# STEP 4 — OCR the referral document pages using OpenAI Vision (GPT-4o-mini).
+# Fetches all pages from the latest referral in the AthenaHealth inbox,
+# sends each page image to OpenAI, and saves the full extracted text to referral_extracted.txt.
+
 import requests
 import base64
 import io

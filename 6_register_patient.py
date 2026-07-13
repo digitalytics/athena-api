@@ -1,3 +1,7 @@
+# STEP 6 — Register the patient in AthenaHealth using data from referral_structured.json (Step 5).
+# Posts to the AthenaHealth patients endpoint and saves the returned patientid
+# back into referral_structured.json for use in subsequent steps.
+
 import requests
 import json
 import os

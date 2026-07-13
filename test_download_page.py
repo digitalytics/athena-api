@@ -1,3 +1,7 @@
+# TEST/DEBUG — Download a single hardcoded referral page (adminid 239631, pageid 83677) as PNG.
+# Opens the image automatically after saving. Used to visually inspect a referral page.
+# Not part of the main pipeline — replaced by Step 3 (fetchhing_doc_pages.py).
+
 import requests
 
 CLIENT_ID = "0oa13c168ol93YVOl298"

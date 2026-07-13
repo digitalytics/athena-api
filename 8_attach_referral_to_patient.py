@@ -1,3 +1,8 @@
+# STEP 8 — Attach the referral document to the patient's chart in AthenaHealth.
+# Downloads the original referral page (PNG), converts it to JPEG,
+# and uploads it directly to the patient's document folder with status CLOSED.
+# Update PATIENT_ID and the page_url to match Steps 6 and 2 respectively.
+
 import requests
 import json
 import io

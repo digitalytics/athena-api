@@ -1,3 +1,7 @@
+# STEP 5 — Parse the OCR text into structured JSON using OpenAI (GPT-4o-mini).
+# Reads referral_extracted.txt (from Step 4), extracts patient/insurance/provider fields,
+# and saves the result to referral_structured.json for use in the next steps.
+
 import os
 import json
 from openai import OpenAI

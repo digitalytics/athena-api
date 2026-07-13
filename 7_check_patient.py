@@ -1,5 +1,11 @@
+# STEP 7 — Verify the patient was registered successfully by fetching their record from AthenaHealth.
+# Update PATIENT_ID to the patientid returned in Step 6.
+
 import requests
 import json
+from dotenv import load_dotenv
+
+load_dotenv()
 
 CLIENT_ID = "0oa13c168ol93YVOl298"
 CLIENT_SECRET = "R0XHO8EbeUD8v69T9tWc3X0b5XjRIWLwF2kGe0kpfTK-PL5YPOpgBGOP_AAMKqS2"
@@ -14,9 +20,10 @@ token = requests.post(
 
 headers = {"Authorization": f"Bearer {token}"}
 
-# Fetch the document we just uploaded
+PATIENT_ID = "68400"
+
 response = requests.get(
-    f"{BASE_URL}/documents/admin/239631",
+    f"{BASE_URL}/patients/{PATIENT_ID}",
     headers=headers
 )
 

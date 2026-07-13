@@ -1,3 +1,7 @@
+# STEP 2 — Fetch metadata/details of a specific admin document from AthenaHealth.
+# Use this to confirm the uploaded referral document exists and see its status, pages, etc.
+# Change the adminid (239639) to match the one returned in Step 1.
+
 import requests
 import json
 

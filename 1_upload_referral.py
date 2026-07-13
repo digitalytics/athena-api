@@ -1,3 +1,7 @@
+# STEP 1 — Build a sample referral PDF and upload it to the AthenaHealth document inbox.
+# This simulates receiving an inbound fax referral for patient Sarah Johnson.
+# Output: prints the new adminid assigned to the uploaded referral document.
+
 import requests
 import json
 import io

@@ -1,3 +1,7 @@
+# TEST/DEBUG — Multi-check verification script: fetches a document record, checks patient admin docs
+# with CLOSED status, and checks patient docs without a filter. Used to debug whether a referral
+# was successfully attached to a patient. Not part of the main pipeline.
+
 import requests
 import json
 from dotenv import load_dotenv

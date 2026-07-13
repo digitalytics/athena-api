@@ -1,3 +1,6 @@
+# STEP 9 — Verify the referral document is now linked to the patient in AthenaHealth.
+# Queries the patient's admin documents list. Update PATIENT_ID to match Step 6.
+
 import requests
 import json
 from dotenv import load_dotenv
@@ -20,8 +23,11 @@ headers = {"Authorization": f"Bearer {token}"}
 PATIENT_ID = "68400"
 
 response = requests.get(
-    f"{BASE_URL}/patients/{PATIENT_ID}",
-    headers=headers
+    f"{BASE_URL}/patients/{PATIENT_ID}/documents/admin",
+    headers=headers,
+    params={
+        "departmentid": "144",
+    }
 )
 
 print("STATUS:", response.status_code)
