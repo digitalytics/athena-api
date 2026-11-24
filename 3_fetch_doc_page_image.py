@@ -11,7 +11,7 @@ PRACTICE_ID = "195900"
 BASE_URL = f"https://api.preview.platform.athenahealth.com/v1/{PRACTICE_ID}"
 
 token = requests.post(
-    "https://api.preview.platform.athenahealth.com/oauth2/v1/token",
+    "https://api.preview.platform.athenahealth.com/oauth2/v1/token", 
     data={"grant_type": "client_credentials", "scope": "athena/service/Athenanet.MDP.*"},
     auth=(CLIENT_ID, CLIENT_SECRET)
 ).json()["access_token"]

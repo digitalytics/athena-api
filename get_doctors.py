@@ -30,14 +30,10 @@ while True:
     if offset >= data.get("totalcount", 0):
         break
 
-# Filter to actual doctors (MDs with billable=true and a real name)
-doctors = [
-    p for p in all_providers
-    if p.get("providertype") == "MD" and p.get("billable")
-]
+doctors = sorted(all_providers, key=lambda p: p.get("providerid", 0))
 
-print(f"{'ID':<8} {'Name':<30} {'Specialty':<35} {'Username':<20} {'NPI'}")
-print("-" * 110)
+print(f"{'ID':<8} {'Name':<30} {'Specialty':<35} {'Username':<20} {'NPI':<15} {'Billable'}")
+print("-" * 125)
 for d in doctors:
     name = f"{d.get('firstname','')} {d.get('lastname','')}".strip()
     print(
@@ -45,7 +41,8 @@ for d in doctors:
         f"{name:<30} "
         f"{d.get('specialty', 'N/A'):<35} "
         f"{d.get('providerusername', 'N/A'):<20} "
-        f"{d.get('npi', 'N/A')}"
+        f"{d.get('npi', 'N/A'):<15} "
+        f"{'Yes' if d.get('billable') else 'No'}"
     )
 
-print(f"\nTotal doctors: {len(doctors)}")
+print(f"\nTotal providers: {len(doctors)}")
